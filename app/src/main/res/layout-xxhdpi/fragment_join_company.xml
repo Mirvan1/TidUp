@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.joinCompany">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/joinCompanyIDText"
+            android:hint="Company Code" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Join"
+            android:id="@+id/joinCompanyButtonUsingCode"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="60dp"
+
+            android:textColor="@android:color/white" />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="350dp"
+            android:text="3/4"
+            android:layout_marginTop="480dp"
+            android:textSize="25sp" />
+    </RelativeLayout>
+</FrameLayout>

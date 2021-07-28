@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.SplashScreen"
+    android:background="@color/colorPrimaryDark">
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/splashName"
+     android:text="TidUp"
+     android:textSize="100sp"
+     android:layout_marginTop="150dp"
+     android:layout_marginStart="80dp"
+     android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/splashSub"
+        android:text="Manage Company Easily"
+        android:textSize="30sp"
+        android:layout_marginTop="380sp"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:layout_marginStart="43dp"/>
+</RelativeLayout>

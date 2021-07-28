@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Company">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginTop="60dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frameLayout"
+            />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/createCompanyButton"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/colorPrimary"
+            android:text="Create Company"
+            android:textColor="@android:color/white" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+            <View
+                android:layout_width="125dp"
+                android:layout_height="2dp"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="28dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+
+                android:layout_marginStart="135dp"
+                android:layout_marginRight="190dp"
+                android:layout_marginBottom="14dp"
+                android:text="OR"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <View
+                android:layout_width="135dp"
+                android:layout_height="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginBottom="26dp"
+
+                android:background="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/joinCompanyButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorPrimary"
+            android:text="Join"
+            android:textColor="@android:color/white" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/frameLayoutJoin"/>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="350dp"
+            android:text="2/5"
+            android:layout_marginTop="150dp"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</ScrollView>

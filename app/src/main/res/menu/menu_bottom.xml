@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item0"
+        android:title="Main"
+        android:icon="@drawable/home_selector"/>
+
+    <item
+        android:id="@+id/item1"
+        android:title="QR Scan"
+        android:icon="@drawable/ic_qrscan"/>
+
+    <item
+        android:id="@+id/item2"
+        android:title="Profile"
+        android:icon="@drawable/ic_op_profile"/>
+
+    <item
+        android:id="@+id/item3"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_dashboard"/>
+
+</menu>

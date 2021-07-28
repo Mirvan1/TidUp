@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TidUp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="promptSpinner">Select Folder</string>
+    <string-array name="folderSpinner">
+        <item>Folder</item>
+        <item>Folder</item>
+
+    </string-array>
+</resources>

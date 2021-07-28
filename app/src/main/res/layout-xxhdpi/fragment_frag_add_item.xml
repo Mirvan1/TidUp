@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".View.fragAddItem">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginTop="50dp"
+        card_view:cardElevation="20dp"
+        card_view:cardCornerRadius="10dp">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_back_button"
+            android:id="@+id/addBack"
+            />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="360dp"
+                    android:layout_height="194dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginEnd="50dp"
+                    android:id="@+id/cameraLogo"
+                    android:background="@drawable/ic_add_ph"/>
+                <com.theartofdev.edmodo.cropper.CropImageView
+                    android:id="@+id/CropImageView"
+                    android:layout_width="360dp"
+                    android:layout_height="194dp" >
+
+
+                </com.theartofdev.edmodo.cropper.CropImageView>
+                <ImageView
+                    android:id="@+id/imageSetCropped"
+                    android:layout_width="360dp"
+                    android:layout_height="194dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_profile" />
+                <Button
+                    android:id="@+id/imageApprove"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ic_done"
+                    android:textAllCaps="false" />
+                <Button
+                    android:id="@+id/cropImage"
+                    android:layout_width="41dp"
+
+                    android:background="@drawable/ic__crop"
+                    android:layout_height="69dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+
+                    android:textAllCaps="false" />
+
+            </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+            <View
+                android:layout_width="360dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="18dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/darker_gray" />
+</RelativeLayout>
+        </LinearLayout>
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        <ImageView-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:id="@+id/addItemImage"-->
+<!--            android:layout_marginStart="15dp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/imageCrop"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentRight="true"-->
+
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginEnd="331dp"-->
+<!--                android:layout_marginRight="331dp"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:background="@drawable/ic_ocr"-->
+<!--                android:textAllCaps="false" />-->
+<!--        </RelativeLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:id="@+id/image_view"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/frame">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="9dp"
+                        android:textSize="25sp"
+                        android:textColor="@android:color/black"
+                        android:text="Name" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="50dp"
+                    android:id="@+id/addItemName"
+                    android:hint=""/>
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imageRecog"
+                        android:layout_marginStart="290dp"
+                        android:background="@drawable/ic_ocr"
+                        android:textAllCaps="false"
+                        />
+                </RelativeLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/frame">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="9dp"
+                android:textSize="25sp"
+                android:textColor="@android:color/black"
+                android:text=" Price" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addItemPrice"
+                android:layout_marginStart="80dp"
+                />
+        </RelativeLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/frame">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="9dp"
+                android:textSize="22sp"
+                android:textColor="@android:color/black"
+                android:text="Quantity" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:id="@+id/addItemQuantity"
+                />
+            </RelativeLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/frame">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="9dp"
+                android:textSize="25sp"
+                android:textColor="@android:color/black"
+                android:text="Date" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:id="@+id/addItemDate"
+                android:layout_marginEnd="40dp"
+                android:hint=""/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:id="@+id/datePicker"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_date"
+                />
+            </RelativeLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/frame">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="9dp"
+                android:textSize="21sp"
+                android:textColor="@android:color/black"
+                android:text="Barcode" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="40dp"
+
+                android:id="@+id/addItemBarcode"
+                android:hint=""/>
+            <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="290dp"
+            android:background="@drawable/ic_bar_code"
+            android:id="@+id/addItemBarcodeButton"/>
+            </RelativeLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/frame">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="9dp"
+                android:textSize="19sp"
+                android:textColor="@android:color/black"
+                android:text="Choose Folder" />
+
+                <Spinner
+                    android:id="@+id/folderSpinnerAdd"
+                    android:layout_width="178dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="12dp"
+                    android:entries="@array/folderSpinner"
+                    android:prompt="@string/promptSpinner" /></RelativeLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/frame"
+            android:layout_marginTop="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="9dp"
+                android:textSize="15sp"
+
+                android:textColor="@android:color/black"
+                android:text="Note" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:id="@+id/addItemNote"
+                android:hint="Type Notes"/>
+            </RelativeLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="ADD ITEM"
+            android:id="@+id/addItemButton"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
